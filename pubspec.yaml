@@ -1,0 +1,36 @@
+name: only_head
+description: "이미지에서 머리(얼굴+머리카락)를 자동으로 감지해 투명 PNG로 잘라내는 앱"
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_riverpod: ^2.6.1
+  image_picker: ^1.1.2
+  image: ^4.3.0
+  path_provider: ^2.1.5
+  share_plus: ^10.1.4
+  google_mlkit_selfie_segmentation: ^0.8.1
+  google_mlkit_face_detection: ^0.11.0
+  gal: ^2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/app_icon_round.png"
