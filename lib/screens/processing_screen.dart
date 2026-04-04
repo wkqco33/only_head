@@ -25,7 +25,7 @@ class _ProcessingScreenState extends State<ProcessingScreen> {
 
   Future<void> _process() async {
     try {
-      setState(() => _status = 'Segmentation 실행 중...');
+      setState(() => _status = '배경 분리 및 얼굴 감지 중...');
       final result = await processHead(widget.imageFile);
 
       if (!mounted) return;
